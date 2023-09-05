@@ -1,14 +1,16 @@
 
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Main from './pages/Main.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          react 시오작~
-        </p>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Main />} />
+          </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
